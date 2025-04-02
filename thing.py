@@ -30,8 +30,8 @@ This app predicts the winner of an IPL cricket match based on the current match 
 """)
 
 # Define file paths directly (update these paths according to your files)
-MATCHES_FILE_PATH = r"C:\Users\aniro\Downloads\matches(1).csv"
-DELIVERIES_FILE_PATH = r"C:\Users\aniro\Downloads\deliveries(1).csv"
+MATCHES_FILE_PATH = r"matches(1).csv"
+DELIVERIES_FILE_PATH = r"deliveries(1).csv"
 
 
 # Function to load data
