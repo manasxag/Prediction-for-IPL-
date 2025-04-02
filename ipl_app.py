@@ -1,3 +1,16 @@
+import subprocess
+import sys
+
+# Ensure required packages are installed
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+install("seaborn")
+install("matplotlib")
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -7,6 +20,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
+
 
 st.set_page_config(page_title="IPL Match Predictor", layout="wide")
 
